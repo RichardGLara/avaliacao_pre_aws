@@ -84,3 +84,13 @@ footer {
     border-radius: 10px;
     background-color: #ffffff;
 }
+
+.button {
+    margin-top: 20px;
+    height: 40px;
+    width: 110px;
+    border-style: none;
+    border-radius: 30px;
+    color: #ffffff;
+    background-color: #080844;
+}
