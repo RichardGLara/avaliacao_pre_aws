@@ -7,6 +7,7 @@ const fone = document.getElementById('fone')
 const user = document.getElementById('username')
 const pass1 = document.getElementById('senha1')
 const pass2 = document.getElementById('senha2')
+const foto = document.getElementById('foto')
 let cadastro = 0
 
 
@@ -54,13 +55,20 @@ function checkingInputs () {
     
     })
 
+    foto.addEventListener("blur", (e) => {
+        console.log(foto.value);
+    
+    })
+
+
+
     //CADASTRAR
   
 }
 
 checkingInputs()
 form.addEventListener('submit', (e) => {
-    //e.preventDefault()
+    e.preventDefault()
     //checkInputs()
     //confere()
     })

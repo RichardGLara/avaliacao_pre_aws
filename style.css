@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: #080844;
-    background-color: #999999;
+    background-color: #aaaaaa;
 }
 
 header {
@@ -22,6 +22,11 @@ header {
 
 h1 {
     margin: 20px;
+}
+
+a {
+    color: #ffffff;
+    font-weight: 800;
 }
 
 form {
@@ -70,7 +75,7 @@ footer {
 .form_infos {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 360px;
 }
 
 .form_title {
@@ -79,10 +84,16 @@ footer {
 
 .form_input {
     height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border-style: none;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #dddddd;
+    border-style: solid;
+    border-color: #080844;
+}
+
+.form_date {
+    color: #999999;
 }
 
 .button {
@@ -93,4 +104,8 @@ footer {
     border-radius: 30px;
     color: #ffffff;
     background-color: #080844;
+}
+
+::placeholder {
+    color: #999999;
 }
