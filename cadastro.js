@@ -16,6 +16,11 @@ function checkingInputs () {
     //VALIDAÇÃO DO NOME COMPLETO
     nome.addEventListener("blur", (e) => {
         console.log(nome.value);
+        if (nome.value.length < 3) {
+            alert("No Mínimo 03 Letras...")
+        } else{
+
+        }
     
     })
 

@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +22,8 @@ header {
 }
 
 h1 {
-    margin: 20px;
+    margin-top: 10px;
+    font-weight: 800;
 }
 
 a {
@@ -30,7 +32,8 @@ a {
 }
 
 form {
-    margin-top: 40px;
+    margin-top: 10px;
+    font-weight: 500;
 }
 
 footer {
@@ -51,7 +54,7 @@ footer {
 }
 
 .header_logo {
-    height: 120px;
+    height: 100px;
     margin-left: 20px;
     z-index: 999;
 }
@@ -59,7 +62,7 @@ footer {
 .header_links {
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .list_links {
@@ -84,12 +87,13 @@ footer {
 
 .form_input {
     height: 30px;
-    margin-bottom: 16px;
+    width: 300px;
+    margin-bottom: 0px;
     border-style: none;
     border-radius: 10px;
     background-color: #dddddd;
     border-style: solid;
-    border-color: #080844;
+    border-color: #aaaaaa;
 }
 
 .form_date {
@@ -98,12 +102,31 @@ footer {
 
 .button {
     margin-top: 20px;
+    margin-bottom: 60px;
     height: 40px;
     width: 110px;
     border-style: none;
     border-radius: 30px;
     color: #ffffff;
     background-color: #080844;
+}
+
+.invisible {
+    display: none;
+}
+
+.form_input_box {
+    display: flex;
+}
+
+.small_hide {
+    margin-bottom: 16px;
+    color: #aaaaaa;
+}
+
+.small_show {
+    margin-bottom: 16px;
+    color: #b60333;
 }
 
 ::placeholder {
