@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="cadastro.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
         <div class="header_div">
             <img class="header_logo" src="img/logo.png" alt="">
             <li class="header_links">
-                <ol class="list_links">teste</ol>
-                <ol class="list_links">teste</ol>
+                <ol class="list_links"><a href="index.html">Cadastro</a></ol>
+                <ol class="list_links"><a href="consulta.html">Consulta</a></ol>
             </li>
         </div>
     </header>
@@ -24,36 +25,81 @@
     <form action="" id="form">
     <div class="form_infos">
         <label class="form_title" for="">nome:</label>
-        <input class="form_input" type="text" placeholder=" nome do aluno">
+        <div class="form_input_box">
+            <input class="form_input" id="nome" type="text" placeholder=" nome completo">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_show">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">nascimento:</label>
-        <input class="form_input" type="text" placeholder=" data de nascimento">
+        <div class="form_input_box">
+            <input class="form_input" id="nascimento" type="date">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">email:</label>
-        <input class="form_input" type="text" placeholder=" e-mail do aluno">
+        <div class="form_input_box">
+            <input class="form_input" id="email" type="text" placeholder=" email do aluno">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">fone:</label>
-        <input class="form_input" type="text" placeholder=" telefone de contato">
+        <div class="form_input_box">
+            <input class="form_input" id="fone" type="number" placeholder=" numero de contato">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">username:</label>
-        <input class="form_input" type="text" placeholder=" username do aluno">
+        <div class="form_input_box">
+            <input class="form_input" id="username" type="text" placeholder=" nome de usuario">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">senha:</label>
-        <input class="form_input" type="text" placeholder=" digite a senha...">
+        <div class="form_input_box">
+            <input class="form_input" id="senha1" type="password" placeholder=" digite uma senha...">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">senha:</label>
-        <input class="form_input" type="text" placeholder=" digite a senha novamente...">
+        <div class="form_input_box">
+            <input class="form_input" id="senha2" type="password" placeholder=" digite a senha novamente...">
+            <i class="img-success invisible" ><img src="img/vrf.png" alt=""></i>
+            <i class="img-error invisible" ><img src="img/att.png" alt=""></i>
+        </div>
+        <small class="small_hide">Error Message</small>
     </div>
+
     <div class="form_infos">
         <label class="form_title" for="">foto:</label>
-        <input type="file">
+        <input type="file" id="foto" class="upload_file">
     </div>
+
+    <button class="button" type="submit">Cadastrar</button>
+
     </form>
 
     <footer>
